@@ -9,51 +9,53 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<!-- <header>
-  <a href="#" class logo>APP DEV ROADMAP</a>
-</header> -->
-<div class="heading">APP DEV ROADMAP</div>
+<header>
+  <img src="images/pexels-uzunov-rostislav-10458835.jpg" class="banner">
+  <a href="#" class="logo">APP DEV ROADMAP</a>
+</header>
+<div>
+  
 <section class="timeline-section">
 	<div class="timeline-items">
 		<div class="timeline-item">
 			<div class="timeline-dot"></div>
 			<!-- <div class="timeline-date">2015</div> -->
-			<div class="timeline-content" data-aos="fade-up">
+			<button class="timeline-content" data-aos="fade-up">
 				<h3>Pick a language</h3>
 				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> -->
-			</div>
+      </button>
 		</div>
 		<div class="timeline-item">
 			<div class="timeline-dot"></div>
 			<!-- <div class="timeline-date">2016</div> -->
-			<div class="timeline-content" data-aos="fade-up">
+			<button class="timeline-content" data-aos="fade-up">
 				<h3>The Fundamentals</h3>
 				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> -->
-			</div>
+      </button>
 		</div>
 		<div class="timeline-item">
 			<div class="timeline-dot"></div>
 			<!-- <div class="timeline-date">2017</div> -->
-			<div class="timeline-content" data-aos="fade-up">
+			<button class="timeline-content" data-aos="fade-up">
 				<h3>Version Control Systems</h3>
 				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> -->
-			</div>
+      </button>
 		</div>
 		<div class="timeline-item">
 			<div class="timeline-dot"></div>
 			<!-- <div class="timeline-date">2018</div> -->
-			<div class="timeline-content" data-aos="fade-up">
+			<button class="timeline-content" data-aos="fade-up">
 				<h3>Repo Hosting Services</h3>
 				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> -->
-			</div>
+      </button>
 		</div>
 		<div class="timeline-item">
 			<div class="timeline-dot"></div>
 			<!-- <div class="timeline-date">2019</div> -->
-			<div class="timeline-content" data-aos="fade-up">
+			<button class="timeline-content" data-aos="fade-up">
 				<h3>Build an Application</h3>
 				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> -->
-			</div>
+      </button>
 		</div>
 		<!-- <div class="timeline-item">
 			<div class="timeline-dot"></div>
@@ -73,10 +75,21 @@
 		</div> -->
 	</div>
 </section>
+</div>
+
+
+
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+
+  <script>
+    window.addEventListener("scroll",function(){
+      const header= document.querySelector('header');
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
   </script>
 
 </body>
