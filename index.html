@@ -20,62 +20,195 @@
 		<div class="timeline-item">
 			<div class="timeline-dot"></div>
 			<!-- <div class="timeline-date">2015</div> -->
-			<button class="timeline-content" data-aos="fade-up">
+			<button class="timeline-content" data-aos="fade-up" onclick="openPick()">
 				<h3>Pick a language</h3>
 				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> -->
-      </button>
+      		</button>
+			<div class="pick" id="pick">
+				<h2>PICK A LANGUAGE</h2>
+				<img src="images/java.png" alt="">
+				<img src="images/Kotlin.png" alt="">
+				<p>For the languages, you can develop android apps either by using Kotlin or Java.</p>
+				<p>Kotlin is the preferred choice these days for native android apps</p>
+				<p>
+					Although, you can use both Kotlin and Java to develop native android apps, Google announced in 2019 to make Kotlin the preferred way of developing android applications. If you were to start learning android development today, Kotlin should be your language of choice.
+				</p>
+				<button type="button" onclick="closePick()">continue to roadmap</button>			
+			</div>
 		</div>
 		<div class="timeline-item">
 			<div class="timeline-dot"></div>
 			<!-- <div class="timeline-date">2016</div> -->
-			<button class="timeline-content" data-aos="fade-up">
+			<button class="timeline-content" data-aos="fade-up" onclick="openFundamental()">
 				<h3>The Fundamentals</h3>
 				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> -->
-      </button>
+      		</button>
+			<div class="fundamental" id="fundamental">
+				<h2>THE FUNDAMENTALS</h2>
+				<p>Install the Android Studio and learn the basics of Kotlin to get started.</p>
+				<div class="funlist">
+					<ul>
+						<a href="https://blog.teamtreehouse.com/absolute-beginners-guide-kotlin">Learn the basics of Kotlin</a>
+					</ul>
+					<ul>
+						<a href="https://kotlinlang.org/docs/reference/basic-syntax.html">Kotlin Docs</a> and <a href="https://kotlinlang.org/docs/tutorials/">Official Kotlin Tutorials</a>
+					</ul>
+					<ul>
+						<a href="https://www.studytonight.com/data-structures/introduction-to-data-structures">Data Structures and Algorithms.</a> Also <a href="https://www.tutorialspoint.com/data_structures_algorithms/index.htm">check this</a>
+					</ul>
+					<ul>
+						<a href="https://kotlinlang.org/docs/reference/collections-overview.html">Kotlin Data Structures</a>
+					</ul>
+					<ul>
+						<a href="https://github.com/bmaslakov/kotlin-algorithm-club">Algorithms and DataStructures in Kotlin</a>
+					</ul>
+				</div>		
+				<button type="button" onClick="closeFundamental()">continue to roadmap</button>			
+			</div>
 		</div>
 		<div class="timeline-item">
 			<div class="timeline-dot"></div>
 			<!-- <div class="timeline-date">2017</div> -->
-			<button class="timeline-content" data-aos="fade-up">
+			<button class="timeline-content" data-aos="fade-up" onclick="openVersion()">
 				<h3>Version Control Systems</h3>
 				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> -->
-      </button>
+      		</button>
+			<div class="version" id="version">
+				<h2>VERSION CONTROL SYSTEMS</h2>
+				<p>Version control systems record your changes to the codebase and allow you to recall specific versions later. There are multiple Version Control Systems available but <a href="https://git-scm.com/">Git</a> is the most common one these days.</p>
+				<p>Here are some of the resources to get you started. Feel free to google and find something else that you find easier:</p>
+				<div class="funlist">
+					<ul>
+						<a href="https://www.udacity.com/course/version-control-with-git--ud123">Udacity- Version Control with Git</a>
+					</ul>
+					<ul>
+						<a href="https://guides.github.com/activities/hello-world/">GitHub Hello World</a>
+					</ul>
+				</div>		
+				<button type="button" onClick="closeVersion()">continue to roadmap</button>			
+			</div>
 		</div>
 		<div class="timeline-item">
 			<div class="timeline-dot"></div>
 			<!-- <div class="timeline-date">2018</div> -->
-			<button class="timeline-content" data-aos="fade-up">
+			<button class="timeline-content" data-aos="fade-up" onclick="openRepo()">
 				<h3>Repo Hosting Services</h3>
 				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> -->
-      </button>
+      		</button>
+			  <div class="repo" id="repo">
+				<h2>REPO HOSTING SERVICES</h2>
+				<p>There are multiple platforms available to host your GitHub repositories. The most commonly used ones are: </p>
+				<div class="funlist">
+					<ul>
+						<a href="https://github.com/">GitHub</a>
+					</ul>
+					<ul>
+						<a href="https://about.gitlab.com/">GitLab</a>
+					</ul>
+					<ul>
+						<a href="https://bitbucket.org/product?&aceid=&adposition=&adgroup=92542405575&campaign=9128560731&creative=414608950767&device=c&keyword=bitbucket&matchtype=e&network=g&placement=&ds_kids=p51241303134&ds_e=GOOGLE&ds_eid=700000001551985&ds_e1=GOOGLE&gclid=Cj0KCQjwnP-ZBhDiARIsAH3FSRerGAvJ7V6Ei0yDdwkIi-OsFYB_W8OeCGJXV_jmV6GzZfa4CwubEZYaAgAdEALw_wcB&gclsrc=aw.ds">Bitbucket</a>
+					</ul>
+				</div>		
+				<button type="button" onClick="closeRepo()">continue to roadmap</button>			
+			</div>
 		</div>
 		<div class="timeline-item">
 			<div class="timeline-dot"></div>
 			<!-- <div class="timeline-date">2019</div> -->
-			<button class="timeline-content" data-aos="fade-up">
+			<button class="timeline-content" data-aos="fade-up" onClick="openBuild()">
 				<h3>Build an Application</h3>
 				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> -->
-      </button>
-		</div>
-		<!-- <div class="timeline-item">
-			<div class="timeline-dot"></div>
-			<div class="timeline-date">2020</div> 
-			<div class="timeline-content" data-aos="fade-up">
-				<h3>timeline item title</h3>
-				 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> 
+      		</button>
+			  <div class="build" id="build">
+				<h2>BUILD AN APP</h2>
+				<p>Here is the list of items that you are going to need when developing Android applications. Please note that, this is an exhaustive list, and you don't need to know it all from the get-go. Get an idea of the items listed, and just start building some apps and keep the items listed in the back of your mind and have a deep dive when using them.</p>
+				<img src="images/build-an-application.png" alt="">
+				<div class="funlist">
+					<ul>
+						<a href="https://developer.android.com/guide/components/activities/intro-activities">Using Activities and Activity Life Cycles</a>
+					</ul>
+					<ul>
+						Building Flexible Interfaces using<a href="https://developer.android.com/guide/components/fragments"> Fragments</a>
+					</ul>
+					<ul>
+						<a href="https://developer.android.com/studio/debug">
+							Debugging Using Android Studio Debugger
+						</a>
+					</ul>
+					<ul>
+						<a href="https://developer.android.com/work/managed-configurations">
+							Handling App Configurations
+						</a>
+					</ul>
+					<ul>
+						<a href="https://developer.android.com/guide/components/intents-filters">
+							Using Intents and Intent Filters
+						</a>
+					</ul>
+					<ul>
+						<a href="https://guides.codepath.com/android/Using-Context">
+							Understand Context
+						</a>
+					</ul>
+					<ul>
+						<a href="https://developer.android.com/training/multiple-threads">
+							Learn About Multithreading
+						</a>
+					</ul>
+					<ul>
+						<a href="https://www.raywenderlich.com/6901838-data-privacy-for-android">
+							Data Privacy
+						</a>
+					</ul>
+					<ul>
+						<a href="https://www.raywenderlich.com/5634-securing-network-data-tutorial-for-android">
+							Securing Network Data
+						</a>
+					</ul>
+					<ul>
+						<a href="https://developer.android.com/training/dependency-injection">
+							Dependency Injection
+						</a>
+					</ul>
+					<ul>
+						<a href="https://developer.android.com/guide/topics/providers/content-providers">
+							Content Providers
+						</a>
+					</ul>
+					<ul>
+						<a href="https://github.com/bumptech/glide">Glide, </a><a href="https://square.github.io/retrofit/">Retrofit, </a><a href="https://firebase.google.com/docs/crashlytics/get-started">Crashlytics, </a><a href="https://github.com/google/gson">GSON</a>
+					</ul>
+					<ul>
+						<a href="https://developer.android.com/topic/libraries/architecture/room">Room, </a><a href="https://developer.android.com/guide/navigation/navigation-getting-started">Navigation, </a><a href="https://developer.android.com/topic/libraries/architecture/workmanager">Work Manager, </a><a href="https://developer.android.com/topic/libraries/architecture/livedata">LiveData, </a><a href="https://developer.android.com/topic/libraries/data-binding">Data Binding</a>
+					</ul>
+					<ul>
+						<a href="https://github.com/ReactiveX/RxJava">RxJava, </a><a href="https://github.com/ReactiveX/RxKotlin">RxKotlin</a>
+					</ul>
+					<ul>
+						<a href="https://developer.android.com/topic/performance/memory-overview">Memory Management Overview</a>
+					</ul>
+					<ul>
+						<a href="https://proandroiddev.com/diving-deeper-into-context-oriented-programming-in-kotlin-3ecb4ec38814">Diving Deeper into context-oriented programming in Kotlin</a>
+					</ul>
+				</div>
+				<p>Recommended <a href="https://www.udacity.com/course/developing-android-apps-with-kotlin--ud9012">Free Course</a> from Google on Android Development with Kotlin</p>
+				<p>More Resources: </p>
+				<div class="funlist">
+				<ul>
+					<a href="https://www.udacity.com/course/developing-android-apps-with-kotlin--ud9012">Developing Android Apps with Kotlin</a></ul>
+					<ul><a href="https://developer.android.com/guide">Android Developer Guides</a></ul>
+					<ul><a href="https://www.raywenderlich.com/">Raywenderlich</a>
+				</ul>
+				</div>		
+				<button type="button" onClick="closeBuild()">continue to roadmap</button>			
 			</div>
 		</div>
-		<div class="timeline-item">
-			<div class="timeline-dot"></div>
-			<div class="timeline-date">2021</div> 
-			<div class="timeline-content" data-aos="fade-up">
-				<h3>timeline item title</h3>
-				 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> 
-			</div>
-		</div> -->
 	</div>
 </section>
+<p class="foot">website by shreeya chatterji</p>
 </div>
+
+
 
 
 
@@ -90,6 +223,51 @@
       const header= document.querySelector('header');
       header.classList.toggle('sticky', window.scrollY > 0);
     });
+  </script>
+
+  <script>
+
+	let pick=document.getElementById("pick");
+    function openPick(){
+      pick.classList.add("open-pick");
+    }
+    function closePick(){
+      pick.classList.remove("open-pick");
+    }
+
+
+	let fundamental=document.getElementById("fundamental");
+	function openFundamental(){
+      fundamental.classList.add("open-fundamental");
+	}
+    function closeFundamental(){
+      fundamental.classList.remove("open-fundamental");
+    }
+
+	let version=document.getElementById("version");
+	function openVersion(){
+      version.classList.add("open-version");
+	}
+    function closeVersion(){
+      version.classList.remove("open-version");
+    }
+
+	let build=document.getElementById("build");
+	function openBuild(){
+      build.classList.add("open-build");
+	}
+    function closeBuild(){
+      build.classList.remove("open-build");
+    }
+
+	let repo=document.getElementById("repo");
+	function openRepo(){
+      repo.classList.add("open-repo");
+	}
+    function closeRepo(){
+      repo.classList.remove("open-repo");
+    }
+
   </script>
 
 </body>

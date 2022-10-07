@@ -54,6 +54,7 @@ header.sticky .logo{
 }
 
 body{
+	width: 100%;
 	font-family: 'Poppins', sans-serif;
 }
 
@@ -102,15 +103,10 @@ body{
 	left: calc(50% - 8px);
 	border-radius: 50%;
 	top:10px;
-}
-/* .timeline-date{
-	font-size: 18px;
-	color: #eaa023;
-	margin:6px 0 15px;
-} */
+} 
+
 .timeline-content{
 	height: 150px;
-	width: 400px;
 	justify-content: center;
 	align-items: center;
     background-color: #2f363e;
@@ -125,7 +121,7 @@ body{
 }
 
 .timeline-content:hover{
-	box-shadow: inset 400px 0 0 0 rgb(169, 169, 255);
+	box-shadow: inset 800px 0 0 0 rgb(169, 169, 255);
 	cursor: pointer;
 	color: black;
 	transition: 5s;
@@ -138,15 +134,246 @@ body{
 	font-weight: 200;
 }
 
-body[data-aos-duration='50000'] [data-aos],
-[data-aos][data-aos][data-aos-duration='50000'] {
-  transition-duration: 50000ms;
+body[data-aos-duration='10000'] [data-aos],
+[data-aos][data-aos][data-aos-duration='10000'] {
+  transition-duration: 10000ms;
+}
+
+
+/* PICK A LANGUAGE */
+.pick{
+    width: 100vh;
+    background: #2f363e;
+	color: beige;
+    border-radius: 6px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.5);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s top 0.4s;
+	z-index: 500;
+}
+.pick h2{
+	padding-top: 30px;
+}
+
+.pick img{ 
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	padding: 20px;
+}
+.open-pick{
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    visibility: visible;
+}
+.pick button{
+    width: 100%;
+    margin-top:50px;
+    padding: 10px 0;
+    background: #00004e;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* FUNDAMENTAL */
+.fundamental{
+    width: 100vh;
+    background: #2f363e;
+	color: beige;
+    border-radius: 6px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.5);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s top 0.4s;
+	z-index: 500;
+}
+.fundamental h2{
+	padding-top: 30px;
+}
+
+.open-fundamental{
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    visibility: visible;
+}
+.fundamental button{
+    width: 100%;
+    margin-top:50px;
+    padding: 10px 0;
+    background: #00004e;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.fundamental a{
+	color: rgb(130, 145, 220) ;
+}
+
+.funlist{
+	align-items: left;
+	text-align: left;
+	padding-left: 100px;
+}
+
+/* VERSION */
+.version{
+    width: 100vh;
+    background: #2f363e;
+	color: beige;
+    border-radius: 6px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.5);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s top 0.4s;
+	z-index: 500;
+}
+.version h2{
+	padding-top: 30px;
+}
+.open-version{
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    visibility: visible;
+}
+.version button{
+    width: 100%;
+    margin-top:50px;
+    padding: 10px 0;
+    background: #00004e;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.version a{
+	color: rgb(130, 145, 220) ;
+}
+
+/* BUILD */
+.build{
+	height: 700px;
+    width: 100vh;
+    background: #2f363e;
+	color: beige;
+    border-radius: 6px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.5);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s top 0.4s;
+	z-index: 500;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+.build h2{
+	padding-top: 30px;
+}
+.build img{
+	height: 400px;
+	width: 600px;
+	padding: 10px;
+
+}
+.open-build{
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    visibility: visible;
+}
+.build button{
+    width: 100%;
+    margin-top:50px;
+    padding: 10px 0;
+    background: #00004e;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.build a{
+	color: rgb(130, 145, 220) ;
+}
+
+/* REPO */
+.repo{
+    width: 100vh;
+    background: #2f363e;
+	color: beige;
+    border-radius: 6px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.5);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s top 0.4s;
+	z-index: 500;
+}
+.repo h2{
+	padding-top: 30px;
+}
+.open-repo{
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    visibility: visible;
+}
+.repo button{
+    width: 100%;
+    margin-top:50px;
+    padding: 10px 0;
+    background: #00004e;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.repo a{
+	color: rgb(130, 145, 220) ;
+}
+
+.foot{
+	background-color: #24292d;
+	text-align: center;
+	padding: 10px;
+	color: bisque;
 }
 
 /* trying to make the page responsive */
-@media(max-width: 767px){
+@media(max-width: 850px){
 	.timeline-items::before{
 		left: 7px;
+		justify-content: left;
+		text-align: left;
 	}
 	.timeline-item:nth-child(odd){
 		padding-right: 0;
