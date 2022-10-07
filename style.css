@@ -1,3 +1,4 @@
+@import "compass/css3";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 *{
 	margin:0;
@@ -8,6 +9,21 @@ html{
 	scroll-behavior: smooth;
 	background-color: #24292d;
 }
+
+/* ADDING CUSTOM SCROLL BAR */
+::-webkit-scrollbar{
+	width:6px;
+}
+::-webkit-scrollbar-thumb{
+	background: linear-gradient(transparent, rgb(136, 0, 255));
+	border-radius: 6px;
+}
+::webkit-scrollbar-thumb:hover{
+	background: linear-gradient(transparent, rgb(0, 255, 102));
+}
+/* END OF CUSTOM SCROLLBAR */
+
+
 header{
 	position: fixed;
 	top: 0;
@@ -110,21 +126,20 @@ body{
 	justify-content: center;
 	align-items: center;
     background-color: #2f363e;
-	box-shadow: inset 0 0 0 0 wheat;
 	padding: 30px;
 	border-radius: 5px;
-	transition: ease-out 0.3s;
 	outline: none;
 	border: none;
 	color: white;
-	transition: 5s;
+	position: relative;
+	transition: 0.8s !important;
 }
 
 .timeline-content:hover{
+	transition: 00.8s;
 	box-shadow: inset 800px 0 0 0 rgb(169, 169, 255);
 	cursor: pointer;
 	color: black;
-	transition: 5s;
 }
 
 .timeline-content h3{
@@ -142,18 +157,19 @@ body[data-aos-duration='10000'] [data-aos],
 
 /* PICK A LANGUAGE */
 .pick{
-    width: 100vh;
-    background: #2f363e;
-	color: beige;
-    border-radius: 6px;
+    max-width: 100vh;
+	width: 95%;
+    background: #311e5b;
+	color: white;
+    border-radius: 10px;
     position: fixed;
     top: 0;
     left: 50%;
-    transform: translate(-50%,-50%) scale(0.5);
+    transform: translate(-50%,-50%) scale(0.1);
     text-align: center;
     padding: 0 30px 30px;
     visibility: hidden;
-    transition: transform 0.4s top 0.4s;
+    transition: transform 0.4s, left 0.4s;
 	z-index: 500;
 }
 .pick h2{
@@ -172,25 +188,26 @@ body[data-aos-duration='10000'] [data-aos],
     visibility: visible;
 }
 .pick button{
-    width: 100%;
-    margin-top:50px;
+    width: 50%;
+    margin-top:20px;
     padding: 10px 0;
-    background: #00004e;
-    color: #fff;
+    background: #9c9cff;
+    color: rgb(31, 0, 0);
     border: 0;
     outline: none;
     font-size: 18px;
-    border-radius: 4px;
+    border-radius: 50px;
     cursor: pointer;
 }
 
 
 /* FUNDAMENTAL */
 .fundamental{
-    width: 100vh;
-    background: #2f363e;
-	color: beige;
-    border-radius: 6px;
+    max-width: 100vh;
+	width: 95%;
+    background: #311e5b;
+	color: white;
+    border-radius: 10px;
     position: fixed;
     top: 0;
     left: 50%;
@@ -198,7 +215,7 @@ body[data-aos-duration='10000'] [data-aos],
     text-align: center;
     padding: 0 30px 30px;
     visibility: hidden;
-    transition: transform 0.4s top 0.4s;
+    transition: transform 0.4s, left 0.4s;
 	z-index: 500;
 }
 .fundamental h2{
@@ -211,19 +228,20 @@ body[data-aos-duration='10000'] [data-aos],
     visibility: visible;
 }
 .fundamental button{
-    width: 100%;
+    width: 50%;
     margin-top:50px;
     padding: 10px 0;
-    background: #00004e;
+    background: #ababff;
     color: #fff;
     border: 0;
     outline: none;
     font-size: 18px;
-    border-radius: 4px;
+    border-radius: 50px;
+	color: black;
     cursor: pointer;
 }
 .fundamental a{
-	color: rgb(130, 145, 220) ;
+	color: rgb(184, 195, 255) ;
 }
 
 .funlist{
@@ -234,10 +252,11 @@ body[data-aos-duration='10000'] [data-aos],
 
 /* VERSION */
 .version{
-    width: 100vh;
-    background: #2f363e;
-	color: beige;
-    border-radius: 6px;
+    max-width: 100vh;
+	width: 95%;
+    background: #311e5b;
+	color: white;
+    border-radius: 10px;
     position: fixed;
     top: 0;
     left: 50%;
@@ -245,7 +264,7 @@ body[data-aos-duration='10000'] [data-aos],
     text-align: center;
     padding: 0 30px 30px;
     visibility: hidden;
-    transition: transform 0.4s top 0.4s;
+    transition: transform 0.4s, left 0.4s;
 	z-index: 500;
 }
 .version h2{
@@ -257,28 +276,29 @@ body[data-aos-duration='10000'] [data-aos],
     visibility: visible;
 }
 .version button{
-    width: 100%;
+    width: 50%;
     margin-top:50px;
     padding: 10px 0;
-    background: #00004e;
-    color: #fff;
+    background: #ababff;
+    color: rgb(0, 0, 0);
     border: 0;
     outline: none;
     font-size: 18px;
-    border-radius: 4px;
+    border-radius: 50px;
     cursor: pointer;
 }
 .version a{
-	color: rgb(130, 145, 220) ;
+	color: rgb(184, 195, 255) ;
 }
 
 /* BUILD */
 .build{
 	height: 700px;
-    width: 100vh;
-    background: #2f363e;
-	color: beige;
-    border-radius: 6px;
+    max-width: 100vh;
+	width: 95%;
+    background: #311e5b;
+	color: white;
+    border-radius: 10px;
     position: fixed;
     top: 0;
     left: 50%;
@@ -286,7 +306,7 @@ body[data-aos-duration='10000'] [data-aos],
     text-align: center;
     padding: 0 30px 30px;
     visibility: hidden;
-    transition: transform 0.4s top 0.4s;
+    transition: transform 0.4s, left 0.4s;
 	z-index: 500;
 	overflow: scroll;
 	overflow-x: hidden;
@@ -295,8 +315,10 @@ body[data-aos-duration='10000'] [data-aos],
 	padding-top: 30px;
 }
 .build img{
-	height: 400px;
-	width: 600px;
+	max-height: 400px;
+	max-width: 600px;
+	height: 95%;
+	width: 95%;
 	padding: 10px;
 
 }
@@ -306,27 +328,28 @@ body[data-aos-duration='10000'] [data-aos],
     visibility: visible;
 }
 .build button{
-    width: 100%;
+    width: 50%;
     margin-top:50px;
     padding: 10px 0;
-    background: #00004e;
-    color: #fff;
+    background: #ababff;
+    color: black;
     border: 0;
     outline: none;
     font-size: 18px;
-    border-radius: 4px;
+    border-radius: 50px;
     cursor: pointer;
 }
 .build a{
-	color: rgb(130, 145, 220) ;
+	color: rgb(184, 195, 255) ;
 }
 
 /* REPO */
 .repo{
-    width: 100vh;
-    background: #2f363e;
-	color: beige;
-    border-radius: 6px;
+    max-width: 100vh;
+	width: 95%;
+    background: #311e5b;
+	color: white;
+    border-radius: 10px;
     position: fixed;
     top: 0;
     left: 50%;
@@ -334,7 +357,7 @@ body[data-aos-duration='10000'] [data-aos],
     text-align: center;
     padding: 0 30px 30px;
     visibility: hidden;
-    transition: transform 0.4s top 0.4s;
+    transition: transform 0.4s, left 0.4s;
 	z-index: 500;
 }
 .repo h2{
@@ -346,19 +369,19 @@ body[data-aos-duration='10000'] [data-aos],
     visibility: visible;
 }
 .repo button{
-    width: 100%;
+    width: 50%;
     margin-top:50px;
     padding: 10px 0;
-    background: #00004e;
-    color: #fff;
+    background: #ababff;
+    color: black;
     border: 0;
     outline: none;
     font-size: 18px;
-    border-radius: 4px;
+    border-radius: 50px;
     cursor: pointer;
 }
 .repo a{
-	color: rgb(130, 145, 220) ;
+	color: rgb(184, 195, 255) ;
 }
 
 .foot{
@@ -366,6 +389,30 @@ body[data-aos-duration='10000'] [data-aos],
 	text-align: center;
 	padding: 10px;
 	color: bisque;
+}
+
+.foot a{
+	text-decoration: underline;
+	color: bisque;
+}
+
+
+.cross{
+	align-items: center;
+	justify-items: center;
+	justify-content: center;
+	position: fixed;
+	height: 25px;
+	width: 35px;
+	font-weight: 10000px;
+	border-radius: 100px;
+	color: black;
+	background-color: #9c9cff;
+	transition: 0.8s;
+}
+.cross:hover{
+	cursor: pointer;
+	box-shadow: 2px 2px black;
 }
 
 /* trying to make the page responsive */
