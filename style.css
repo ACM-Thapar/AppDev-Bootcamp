@@ -384,6 +384,214 @@ body[data-aos-duration='10000'] [data-aos],
 	color: rgb(184, 195, 255) ;
 }
 
+/* PROJECT 1 */
+.pro1{
+    max-width: 100vh;
+	width: 95%;
+    background: #311e5b;
+	color: white;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.5);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, left 0.4s;
+	z-index: 500;
+}
+.pro1 h2{
+	padding-top: 30px;
+}
+.open-pro1{
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    visibility: visible;
+}
+.pro1 button{
+    width: 50%;
+    margin-top:50px;
+    padding: 10px 0;
+    background: #ababff;
+    color: black;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.pro1 a{
+	color: rgb(184, 195, 255) ;
+}
+
+/* PROJECT 2 */
+.pro2{
+    max-width: 100vh;
+	width: 95%;
+    background: #311e5b;
+	color: white;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.5);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, left 0.4s;
+	z-index: 500;
+}
+.pro2 h2{
+	padding-top: 30px;
+}
+.open-pro2{
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    visibility: visible;
+}
+.pro2 button{
+    width: 50%;
+    margin-top:50px;
+    padding: 10px 0;
+    background: #ababff;
+    color: black;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.pro2 a{
+	color: rgb(184, 195, 255) ;
+}
+
+
+/* PROJECT 3 */
+.pro3{
+    max-width: 100vh;
+	width: 95%;
+    background: #311e5b;
+	color: white;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.5);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, left 0.4s;
+	z-index: 500;
+}
+.pro3 h2{
+	padding-top: 30px;
+}
+.open-pro3{
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    visibility: visible;
+}
+.pro3 button{
+    width: 50%;
+    margin-top:50px;
+    padding: 10px 0;
+    background: #ababff;
+    color: black;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.pro3 a{
+	color: rgb(184, 195, 255) ;
+}
+
+
+/* PROJECT 4 */
+.pro4{
+    max-width: 100vh;
+	width: 95%;
+    background: #311e5b;
+	color: white;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.5);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, left 0.4s;
+	z-index: 500;
+}
+.pro4 h2{
+	padding-top: 30px;
+}
+.open-pro4{
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    visibility: visible;
+}
+.pro4 button{
+    width: 50%;
+    margin-top:50px;
+    padding: 10px 0;
+    background: #ababff;
+    color: black;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.pro4 a{
+	color: rgb(184, 195, 255) ;
+}
+
+/* PROJECT 5 */
+.pro5{
+    max-width: 100vh;
+	width: 95%;
+    background: #311e5b;
+	color: white;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.5);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, left 0.4s;
+	z-index: 500;
+}
+.pro5 h2{
+	padding-top: 30px;
+}
+.open-pro5{
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    visibility: visible;
+}
+.pro5 button{
+    width: 50%;
+    margin-top:50px;
+    padding: 10px 0;
+    background: #ababff;
+    color: black;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.pro5 a{
+	color: rgb(184, 195, 255) ;
+}
+
+/* FOOTER */
 .foot{
 	background-color: #24292d;
 	text-align: center;
